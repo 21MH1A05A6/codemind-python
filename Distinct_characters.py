@@ -1,8 +1,7 @@
 n=input()
-x=list(n)
 b=[]
-for i in x:
-    if  i in 'abcdefghijklmnopqrstuvwxyz' and x.count(i)==1:
+for i in n:
+    if i not in b and i not in ' ABCDEFGHIJKLMNOPQRSTUVWXYZ':
         b+=[i]
 p=sorted(b)
 for j in p:
