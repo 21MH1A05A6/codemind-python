@@ -3,8 +3,7 @@ a=list(map(int,input().split()))
 b=list(map(int,input().split()))
 c=[]
 d=[]
-p=0
-q=0
+p,q=0,0
 for i in a:
     if(i not in b and i not in c):
         c+=[i]
