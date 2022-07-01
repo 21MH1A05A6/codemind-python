@@ -1,7 +1,8 @@
-n=input()
-n1=n.lower()
-x=n1[: :-1]
-if(n1==x):
-    print('True')
-else:
-    print('False')
+s=input()
+m=(s.lower()).split()
+for i in m:
+    n=str(i)
+    if n==n[::-1]:
+        print('True')
+    else:
+        print('False')
