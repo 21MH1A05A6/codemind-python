@@ -1,14 +1,15 @@
-n=input()
-m=input()
-s1=n.lower()
-s2=m.lower()
-b=[]
-for i in s1:
-    if i not in s2 and i not in b and i!=' ':
-        b+=[i]
-for k in s2:
-    if k not in s1 and k not in b:
-        b+=[k]
-c=sorted(b)
-for j in c:
-    print(j,end='')
+s1=input()
+s2=input()
+n=s1.lower()
+m=s2.lower()
+p=[]
+for i in n:
+    if i not in m and i not in p:
+        p+=[i]
+for j in m:
+    if j not in n and j not in p:
+        p+=[j]
+b=sorted(p)
+for k in b:
+    if k!=' ':
+        print(k,end='')
